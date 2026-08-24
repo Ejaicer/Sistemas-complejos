@@ -1,1 +1,66 @@
-<h1> k onda, k pez </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenidos a mi sitio web!</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este es un párrafo de bienvenida. Aquí puedes escribir una breve introducción sobre lo que trata tu sitio web.</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Estoy aprendiendo a programar páginas web usando HTML.</p>
+            <h3>Mis pasatiempos:</h3>
+            <ul>
+                <li>Aprender tecnología</li>
+                <li>Leer libros</li>
+                <li>Escuchar música</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes enviarme un mensaje completando el siguiente formulario:</p>
+            
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
