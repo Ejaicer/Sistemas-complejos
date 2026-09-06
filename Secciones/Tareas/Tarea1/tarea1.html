@@ -220,9 +220,16 @@
         <p> Desarrollamos el corchete: </p>
             $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{2} - \frac{z_{n}}{a} \right) \left( \frac{1}{2} + \frac{z_{n}}{a} \right) $$
         <p> Juntamos el binomio conjugado: </p>
-            $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{4} - \frac{z_{n}}{a^{2}} \right)  $$
+            $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{4} - \frac{z_{n}^{2}}{a^{2}} \right)  $$
         <p> multiplicamos por \( -a \) :
             $$ z_{n+1} - \frac{a}{2} = z_{n}^{2} - \frac{a^{2}}{4} $$
+        <p> Despejamos \( z_{n+1} \) y agrupamos los términos con \( a \) : </p>
+            $$ z_{n+1} = a \left( \frac{1}{2} - \frac{a}{4} \right) $$
+            $$ \therefore z_{n+1} = z_{n}^{2} + \frac{a(2-a)}{4} $$
+        <p> Finalmente, sea \( c = \frac{a(2-a)}{4}  \) , entonces: </p>
+            $$ z_{n+1} = z_{n}^{2} + c $$
+        <p> Por lo que recuperamos Mandelbrot.</p>
+            
     </section>
 
         <!--  ::::::::::::::::::.:::. Sección :::::::::::::::::::::::::::::.....:::::::..... -->
