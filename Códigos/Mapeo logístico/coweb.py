@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ########### Parámetros
-a = 3.6
+a = 3.8
 x0 = 0.2
 n_iter = 100
 
@@ -48,4 +48,5 @@ plt.ylim(0, 1)
 plt.legend()
 plt.grid()
 
+plt.savefig(fr'coweb_{a}.png')
 plt.show()

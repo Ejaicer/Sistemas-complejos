@@ -43,6 +43,12 @@ for i in range(n_plot):
     plt.plot(a,x, 'k', alpha = 0.1)
 
 
+############# cortes de los valores de a
+#plt.axvline(x = 2, color = 'red', linestyle = '--')
+#plt.axvline(x = 3.2, color = 'red', linestyle = '--')
+#plt.axvline(x = 3.5, color = 'red', linestyle = '--')
+#plt.axvline(x = 3.8, color = 'red', linestyle = '--')
+
 ####grafica
 plt.xlabel(r"$a$", fontsize=14)
 plt.ylabel(r"$x$", fontsize=14)
@@ -50,7 +56,7 @@ plt.title("Diagrama de bifuraciones del mapeo logístico", fontsize=16)
     
 plt.xlim(a_min,a_max)
 plt.ylim(0,1)
-
+plt.savefig('bifu_sinaa.png')
 plt.show()
 ####
 
