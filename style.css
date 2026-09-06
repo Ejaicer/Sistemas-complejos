@@ -24,3 +24,15 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+.contenedor-imagenes {
+  display: flex;
+  gap: 10px; /* Espacio de separación entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.contenedor-imagenes img {
+  width: 200px; /* Ajusta el ancho de las imágenes a tu gusto */
+  height: auto; /* Mantiene la proporción original */
+}
+
