@@ -32,7 +32,7 @@ button:hover {
 }
 
 .contenedor-imagenes img {
-  width: 200px; /* Ajusta el ancho de las imágenes a tu gusto */
+  width: 100%; /* Ajusta el ancho de las imágenes a tu gusto */
   height: auto; /* Mantiene la proporción original */
 }
 
