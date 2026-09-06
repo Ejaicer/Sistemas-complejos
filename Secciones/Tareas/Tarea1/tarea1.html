@@ -216,9 +216,13 @@
             $$ x_{n} = \frac{1}{2} - \frac{z_{n}}{a} \quad \Rightarrow \quad x_{n+1} = \frac{1}{2} - \frac{z_{n+1}}{a} $$
         
        <p> Entonces al sustituir en la ecuación del mapeo logístico, tenemos que: </p>
-        
             $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{2} - \frac{z_{n}}{a} \right) \left[ 1- \left( \frac{1}{2} - \frac{z_{n}}{a} \right) \right] $$
-        
+        <p> Desarrollamos el corchete: </p>
+            $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{2} - \frac{z_{n}}{a} \right) \left( \frac{1}{2} + \frac{z_{n}}{a} \right) $$
+        <p> Juntamos el binomio conjugado: </p>
+            $$ \frac{1}{2} - \frac{z_{n+1}}{a} = a \left( \frac{1}{4} - \frac{z_{n}}{a^{2}} \right)  $$
+        <p> multiplicamos por \( -a \) :
+            $$ z_{n+1} - \frac{a}{2} = z_{n}^{2} - \frac{a^{2}}{4} $$
     </section>
 
         <!--  ::::::::::::::::::.:::. Sección :::::::::::::::::::::::::::::.....:::::::..... -->
