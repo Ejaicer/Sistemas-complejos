@@ -32,9 +32,17 @@
         <h1> Lotka-Volterra</h1>
 
         $$ f(x)= \left\{ \begin{array}{lc}
-              \frac{dx}{dt} = \alpha x - \beta x y & x(0) = 0\text{,} \quad y(0) = 0 \\
+              \frac{dx}{dt} = \alpha x - \beta x y \text{;} & x(0) = 0\text{,} \quad y(0) = 0 \\
               \\ \frac{dy}{dt} = \delta x y - \gamma y  \\ 
               \end{array} \right. $$
+        Donde: <br> 
+            <ul>
+                <li>\( \alpha \) es la tasa de crecimiento de las presas. </li>
+                <li>\( \beta \) es la tasa de pérdida de presas a causa de los depredadores. </li>
+                <li>\( \delta \) es la tasa de crecimiento de los depredadores dependiendo de la disponibilidad de presas.  </li>
+                <li>\( \gamma \) es la tadsa de mortalidad de los depredadores. </li>
+            </ul>
+        <p> \( x_{0} \ \text{y} \ y_{0} \) son la cantidad de presas y depredadores al tiempo \( t = 0 \), respectivamente. </p>
         
         <h3 style="text-align: center;">Caso de Referencia</h3>
         <div style="text-align: center;">
