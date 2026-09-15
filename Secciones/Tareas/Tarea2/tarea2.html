@@ -30,12 +30,16 @@
 <!---------------- Lotka-Volterra -->
     <section>
         <h1> Lotka-Volterra</h1>
+        <p> El sistema Lotka-Volterra es un sistema dinámico de dos ecuaciones diferenciales que describe la interacción entre
+        dos poblaciones distintas, usualmente presa-depredador. </p>
 
         $$ f(x)= \left\{ \begin{array}{lc}
               \frac{dx}{dt} = \alpha x - \beta x y \text{;} & x(0) = 0\text{,} \quad y(0) = 0 \\
               \\ \frac{dy}{dt} = \delta x y - \gamma y  \\ 
               \end{array} \right. $$
-        Donde: <br> 
+         
+        <p> Donde: <br>
+        \( x(t) \) representa la población de presas e \( y\) la población de depredadores; y los parámetros: </p>
             <ul>
                 <li>\( \alpha \) es la tasa de crecimiento de las presas. </li>
                 <li>\( \beta \) es la tasa de pérdida de presas a causa de los depredadores. </li>
@@ -43,7 +47,21 @@
                 <li>\( \gamma \) es la tadsa de mortalidad de los depredadores. </li>
             </ul>
         <p> \( x_{0} \ \text{y} \ y_{0} \) son la cantidad de presas y depredadores al tiempo \( t = 0 \), respectivamente. </p>
+
+
+        <h3 style="text-align: center;">Regiones de comportamiento</h3>
+        <div style="text-align: center;">
+            <figure>
+            <img src="img/lotka-v/fases_ref_reg.png" style="width: 50%; height: auto;" alt="Fases ref" />
+            <figcaption> Regiones de comportamiento en el espacio de las fases del sistema Lotka-Volterra. </figcaption>
+            </figure>
+        </div> 
+        <p> El mapa se dividió en tres regiones: la primera representa la caída de población de depredadores debido a una escacez
+        de presas; la segunda el crecimiento de la población de presas debido a la ausencia de depredadores; y finalmente, la
+        tercera que muestra el "momento de caza" pues se observa una disminución de presas acompañado de aumento de depredadores.
+        </p>
         
+        <hr>
         <h3 style="text-align: center;">Caso de Referencia</h3>
         <div style="text-align: center;">
             <figure>
