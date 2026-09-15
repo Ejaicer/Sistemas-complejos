@@ -139,7 +139,23 @@
         <!------------------  Péndulo ------------------------------------------->
     <section>
         <h1> Péndulo simple</h1>
+        <p> El péndulo simple es un módelo ideal donde se desprecian las fuerzas externas y se describe a través de la EDO
+        de segundo orden: </p>
 
+        $$ \frac{d^{2} \theta}{dt^{2} + \frac{g}{\ell}sin(\theta) = 0}$$
+
+        <p> Esta EDO se puede convertir en un sistema de dos ecuaciones de primer orden al definir \( \omega =
+            \frac{d \theta}{dt}\) llegando a:</p>
+
+        $$ f(x)= \left\{ \begin{array}{lc}
+              \frac{d \theta}{dt} = \omega \text{;} & \theta (0) = 0\text{,} \quad \omega (0) = 0 \\
+              \\ \frac{d \omega}{dt} =  \frac{g}{l} sin(\theta)  \\ 
+              \end{array} \right. $$
+<p> donde: <br>
+    \( \theta \) representa la posición angular respecto al eje vértical; \( \omega \) es la velocidad angular; \( \ell \) la 
+    longitud de la cuerda de masa despreciable; y \( g \) es la aceleración de la gravedad. <br>
+    \( \tetha_{0} \text{y} \omega_{0} \) represantan la condiciones inciales del ángulo y velocidad angular, respectivamente.
+</p>
 <!----------------------------------------------------------------------------------------------------------->
         <h3 style="text-align: center;">Caso \( \ell = 1 \)</h3>
         <div style="text-align: center;">
