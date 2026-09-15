@@ -33,7 +33,7 @@
         <p> El sistema Lotka-Volterra es un sistema dinámico de dos ecuaciones diferenciales que describe la interacción entre
         dos poblaciones distintas, usualmente presa-depredador. </p>
 
-        $$ f(x)= \left\{ \begin{array}{lc}
+        $$ \left\{ \begin{array}{lc}
               \frac{dx}{dt} = \alpha x - \beta x y \text{;} & x(0) = x_{0}\text{,} \quad y(0) = y_{0} \\
               \\ \frac{dy}{dt} = \delta x y - \gamma y  \\ 
               \end{array} \right. $$
@@ -147,8 +147,8 @@
         <p> Esta EDO se puede convertir en un sistema de dos ecuaciones de primer orden al definir \( \omega =
             \frac{d \theta}{dt}\) llegando a:</p>
 
-        $$ f(x)= \left\{ \begin{array}{lc}
-              \frac{d \theta}{dt} = \omega \text{;} & \theta (0) = theta_{0} \text{,} \quad \omega (0) = \omega_{0} \\
+        $$ \left\{ \begin{array}{lc}
+              \frac{d \theta}{dt} = \omega \text{;} & \theta (0) = \theta_{0} \text{,} \quad \omega (0) = \omega_{0} \\
               \\ \frac{d \omega}{dt} =  -\frac{g}{l} sin(\theta)  \\ 
               \end{array} \right. $$
 <p> donde: <br>
@@ -181,6 +181,8 @@
         </div>
 
 <!----------------------------------------------------------------------------------------------------------->
+      
+        
         <h3 style="text-align: center;">Caso \( \ell = 2 \)</h3>
         <div style="text-align: center;">
             <figure>
@@ -207,10 +209,20 @@
         
     </section>
 
-        
+          <hr>
 <!---------------------------- Lorenz ------------------------------------------------------->
     <section>
         <h1> Atractor de Lorenz</h1>
+
+    <p>El atractor de Lorenz es el sistema predilecto para comenzar a estudiar el caos y la sensibilidad a condiciones
+        iniciales. Se describe a tráves de:
+    </p>  
+             $$ \left\{ \begin{array}{lc}
+              \frac{dx}{dt} = \sigma (x-y)  \text{;} &  x(0) = x_{0} \text{,} \quad y(0) = y_{0} \text{,} z(0) = z_{0} \\
+              \\ \frac{dy}{dt} = x (\rho - z)  \\
+              \\ \frac{dz}{dt} = x*y -\beta_{l} z \\
+              \end{array} \right. $$
+        donde \( x \text{,} \ y \text{, y} \ z \) son variables y \( \sigma \text{,} \ \rho \text{, y} \ \beta_{l} \)
 
         <div class="contenedor-imagenes">
           <img src="img/lorenz/xy_u0.png" style="width: 32%; height: auto;" alt=" xyu0">
