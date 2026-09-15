@@ -16,7 +16,7 @@ tiempos = np.linspace(0, T, 3000)
 
 #########################3 péndulo simple
 g = 9.81
-ell = 1
+ell = 2
 
 def pendulo(t, u):
     theta, omega = u

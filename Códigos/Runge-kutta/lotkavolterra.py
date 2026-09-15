@@ -9,10 +9,10 @@ tiempos = np.linspace(0, T, 3000)
 
 ###########parámetros del modelo
 
-alpha =1.2 #### tasa de crecimiento presas
-beta = 0.3 #### muerte por depredación
-delta = 0.1 #### crecimiento de depredadores
-gamma = 0.2 #### muerte de depredadores
+alpha =1.2 #### tasa de crecimiento presas ref: 1.2 ---> 0.9
+beta = 0.3 #### muerte por depredación ref: 0.3 --->1.0
+delta = 0.1 #### crecimiento de depredadores ref: 0.1 ---> 0.05
+gamma = 0.4 #### muerte de depredadores ref: 0.2 --->0.4
 
 
 #############333 Lotka-Volterra
