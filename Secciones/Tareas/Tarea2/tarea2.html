@@ -59,6 +59,7 @@
         <p> El mapa se dividió en tres regiones: la primera representa la caída de población de depredadores debido a una escacez
         de presas; la segunda el crecimiento de la población de presas debido a la ausencia de depredadores; y finalmente, la
         tercera que muestra el "momento de caza" pues se observa una disminución de presas acompañado de aumento de depredadores.
+            Nota: Se considera que la población en millares.
         </p>
         
         <hr>
@@ -146,6 +147,31 @@
     </section>
         <h3> Discusión </h3>
         <p>
+            Se observan tres regiones de comportamiento, las cuales se mencionaron al inicio. La región 1 corresponde a la zona donde
+            el signo de la derivada, correspondiente a la velocidad de crecimiento de los depredadores \( \dot{y} \), es negativo pues se
+            muestra como va descendiendo su población y a la mitad de la región aparece el cambio de signo de la velocidad de población de
+            presas \( \dot{x} \), sin embargo, también al final se observa el cambio de \( \dot{y} \) a signo positivo mostrando
+            un pequeño crecimiento. A escaces de depredadores se ve que \( \dot{x} \) va creciendo pero también \( \dot{y} \) va en aumento.
+            Algo que cabe destacar es que, en el caso correspondiente a las condiciones iniciales \( (x_{0},y_{0}) = (2,1) \), la solución
+            desaparece del espacio de fases, lo cual significa la extinción de la población de presas y se puede comprobar con el gráfico
+            de evolución temporal correspondiente a esas condiciones iniciales.
+            Finalmente, en la trancisión de región dos a tres, se puede observar el cambio de signo de \( \dot{x} \) por lo que comienza la
+            reducción de presas y se alcanza la máxima tasa de crecimiento de depredadores.
+            Al reducir el parámetro \( \alpha \), relacionada al crecimiento de presas, observamos que se reduce la población máxima 
+            alcanzada tanto de presas como de depredadores, pues al tener menos comida, su reproducción es menor.
+            Al aumentar la tasa de pérdida de presas por depredadores \( \beta \), se puede notar que el equilibrio se alcanza con poblaciones
+            menores para las conciones \( (x_{0},y_{0}) = (2,1) \) y \( (x_{0},y_{0}) = (6,2) \); sin embargo, para las condiciones iniciales
+            correspondientes a una mayor población de depredadores \( (x_{0},y_{0}) = (3,7) \) se observa una extinción muy rápida, además el
+            tiempo propuesto no alcanzó para terminar un ciclo de la solución (matemáticamente hablando).
+            Los otros dos casos, correspondiente a la velocidad de crecimiento de depredares, mostraron comportamientos similares. En un
+            caso se redujo a la mitad la tasa de crecimiento de depredadores \( \delta \) y en el otro se aumento al doble la tasa de muerte de
+            depredadores \( \gamma \). A pesar de su comportamiento similar, las gráficas de evolución temporal nos muestran comportamientos
+            diferentes, pues en el cambio de \( \delta \) observamos extinción en una de las soluciones, mientras que en el otro, las tres muestran
+            equilibrio en el espacio de las fases.
+            Finalmente, se obtuvo un comportamiento similar en todas las gráficas de evolución temporal donde los máximos de población se encuentran
+            desfasados, esto puede explicarse gracias a que a menor cantidad de depredadores, las presas pueden ir creciendo con mayor libertad, sin
+            embargo, eso significa más alimento para los depredadores por lo que provoca un mayor crecimiento en su población mientras van reduciendo
+            la cantidad de presas.
             
         </p>
 
