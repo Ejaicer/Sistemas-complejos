@@ -302,7 +302,7 @@
         
         <!-- --------------------------------------------------------------------->
         
-        <h2 style="text-align: center;">Espacios de las fases por pares.</h2>
+        <h2 style="text-align: center;">Espacios de las fases por pares y 3D.</h2>
         <div class="contenedor-imagenes">
           <img src="img/lorenz/xy_u0.png" style="width: 32%; height: auto;" alt=" xyu0">
           <img src="img/lorenz/xz_u0.png" style="width: 32%; height: auto;" alt=" xzu0">
@@ -319,6 +319,12 @@
           <img src="img/lorenz/xy_u2.png" style="width: 32%; height: auto;" alt=" xyu2">
           <img src="img/lorenz/xz_u2.png" style="width: 32%; height: auto;" alt=" xzu2">
           <img src="img/lorenz/yz_u2.png" style="width: 32%; height: auto;" alt=" yzu2">
+        </div>
+        
+        <div class="contenedor-imagenes">
+          <img src="img/lorenz/3d_u0.png" style="width: 32%; height: auto;" alt=" 3du0">
+          <img src="img/lorenz/3d_u1.png" style="width: 32%; height: auto;" alt=" 3du1">
+          <img src="img/lorenz/3d_u2.png" style="width: 32%; height: auto;" alt=" 3du2">
         </div>
 
         <h2 style="text-align: center;">Sensibilidad a las condiciones iniciales.</h2>
@@ -341,7 +347,16 @@
 
         <h3> Discusión </h3>
         <p>
-            
+            Para los tres casos de condiciones iniciales obtuvimos comportamientos caóticos los cuales terminan oscilando alrededor
+            de dos puntos; tanto los mapas del espacio de fases como las evoluciones temporales para cada variable nos ayudan a observar este
+            fenómeno. Cabe destacar de que apesar de que las condiciones iniciales son distintas, los resultados parecen ser similares; sin 
+            embargo, se tomó el caso de condiciones \( (x_{0},y_{0}, z_{0}) = (1,1,1) \) y se realizó una perturbación en la variable \( x \)
+            con el fin de observar la sensibilidad a las condiciones iniciales.
+            En el gráfico de evolución temporal podemos observar que inicialmente tienen un comportamiento similirar pero al comenzar a 
+            oscilar entre los dos puntos atractores el comportamiento cambia totalmente pero preservando el moviento alrededor de los
+            atractores. El mapa del Espacio de la fases nos muestra un claro comportamiento distinto que hasta llega a parecer que el caso
+            pertubado no tiene ninguna coherencia, sin embargo, con la evolución temporal hemos visto que aún sigue oscilando alrederor de
+            los atractores.
         </p>
 
     <section>
