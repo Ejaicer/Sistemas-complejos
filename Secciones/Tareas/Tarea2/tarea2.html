@@ -252,17 +252,21 @@
 
         <h3> Discusión </h3>
         <p>
-            Ésta práctica nos ayuda a comprender el comportamiento de distintos sistemas dinámicos a través de las mismas herramientas, 
-            como son los gráficos de evolución temporal así como el análisis del espacio de la fases junto a los campos de direcciones.
-            Estás herramientas a pesar de procesar los mismos datos, cada una nos dice distintas cosas que no sólo nos dan una perspectiva
-            más enriquecedora de manera individual, sino que resulta ser complementaria para poder comprender mejor los fenómenos; por
-            ejemplo, en el sistema de Lotka-Volterra, el espacio de las fases nos ayudó a enender el comportamiento general del ciclo de
-            presa-depredador mientras que los gráficos temporales nos indicaban la relación en la evolución de las poblaciones que, aunque
-            en el espacio de las fases el ciclo se cerraba, en estos gráficos nos mostraban el momento de extinsión en algunos casos donde
-            en realidad el modelo ya no debería seguir pues no tendría sentido real la aparción de nuevas especies de la nada.
-            Además es importante destacar como reglas deterministas nos llevan a resultados caóticos, como en el atractor de Lorenz;
-            o como cambios en un parámetro nos pueden mostrar distintos comportamientos, usando de ejemplo el tomar una cuerda más
-            larga en el péndulo. 
+            En el primer caso, donde el largo de la cuerda es \( \ell = 1 \) , todas las condiciones iniciales impuestas muestran
+            movimimientos periódicos donde todos los ángulos máximos son menores a 180°, lo cual físicamente representa que el péndulo
+            se encuentra en poscición "de cabeza"; sin embargo, al cambiar a la lóngitud a \( \ell = 2 \) apareció un nuevo comportamiento
+            en una de las condiciones (el cuál ya apararecia de alguna manera en el campo de direcciones) que no cierra ningún ciclo y que
+            puede representarse como un giro completo de el péndulo en lugar del movimiento de vaivén.
+            Para reforzar que este movimiento corresponde a rotaciones, y no oscilaciones, nos apoyamos en el gráfico de evolución temporal
+            pues el ángulo en lugar de tener un comportamiento acotado, este comienza a crecer indefinidamente.
+            Respecto a la velocidad angular podemos catalogar al movimiento del péndulo en dos partes, a favor o en contra de la gravedad,
+            para comprender el comportamiento de esta. Cuando el movimiento es a favor de la gravedad, la velocidad angular \( \omega \) es
+            positiva y negativa en el otro caso. En el caso de rotación, la velocidad nunca es cero pues está rotando continuamente. El caso
+            más interesante corresponde al movimiento de vaivén pues en este existen dos puntos donde \( |\omega | = 0 \) lo cual significa
+            dos cosas: físicamente, se encuentra en reposo por un instante para cambiar la preferencia del movimiento a favor o en contra
+            de la gravedad, y matemáticamente, que se alcanzaron los valores críticos de los ángulos, es decir, la posición máxima y mínima.
+            
+            
         </p>
         
           <hr>
@@ -371,6 +375,20 @@
 
     <section>
         <h2> Conclusión</h2>
+        <p>
+            Ésta práctica nos ayuda a comprender el comportamiento de distintos sistemas dinámicos a través de las mismas herramientas, 
+            como son los gráficos de evolución temporal así como el análisis del espacio de la fases junto a los campos de direcciones que
+            nos muestran la dirección de desarrollo de la soluciones de los sistemas.
+            Estás herramientas a pesar de procesar los mismos datos, cada una nos dice distintas cosas que no sólo nos dan una perspectiva
+            más enriquecedora de manera individual, sino que resulta ser complementaria para poder comprender mejor los fenómenos; por
+            ejemplo, en el sistema de Lotka-Volterra, el espacio de las fases nos ayudó a enender el comportamiento general del ciclo de
+            presa-depredador mientras que los gráficos temporales nos indicaban la relación en la evolución de las poblaciones que, aunque
+            en el espacio de las fases el ciclo se cerraba, en estos gráficos nos mostraban el momento de extinsión en algunos casos donde
+            en realidad el modelo ya no debería seguir pues no tendría sentido real la aparción de nuevas especies de la nada.
+            Además es importante destacar como reglas deterministas nos llevan a resultados caóticos, como en el atractor de Lorenz;
+            o como cambios en un parámetro nos pueden mostrar distintos comportamientos, usando de ejemplo el tomar una cuerda más
+            larga en el péndulo. 
+        </p>
     </section>
         
 <hr>
