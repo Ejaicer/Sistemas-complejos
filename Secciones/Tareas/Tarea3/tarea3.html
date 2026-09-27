@@ -45,6 +45,27 @@
 <!---------------------------- Juego de la Vida ------------------------------------------------------->
     <section>
         <h1> Juego de la Vida </h1>
+        <p>
+            El juego de la vida de Conway es un ejemplo de autómata celular en dos dimensiones. Es un juego sin jugadores, es decir,
+            evoluciona a partir de condiciones iniciales sin necesidad de interveciones extra.
+            <br>
+            Se juega en un mapa de dos dimensiones, donde las casillas pueden tener dos estados: viva o muerta.
+            Cada celda tiene 8 vecinos, conocida como la "vecindad de Moore". Se considera una frontera periódica para que las celdas
+            que se encuentran en las orillas puedan tener 8 vecinos.
+        </p>
+        <h3> Reglas del juego de la vida:</h3>
+        <ul>
+            <li> Se comienza en una malla de \( n \times n \) donde cada celda solo puede tomar valores 1 ó 0.</li>
+            <li> Se establecen las condiciones iniciales.</li>
+            <li> El sistema evoluciona a través de pasos del tiempo discretos donde:
+                <ul>
+                    <li> Una celula viva sobrevie si tiene exactamente 2 ó 3 vecinos vivos.</li>
+                    <li> Una celula muerte revive si tiene exactamente 3 vecinos vivos.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p> A continuación se muestra un caso del juego de la vida en 100 pasos con condiciones iniciales aleatorias: </p>
         <div style="text-align: center;">
             <figure>
             <img src="img/conway.gif" style="width: 50%; height: auto;" alt="Conway GOF" />
