@@ -31,6 +31,35 @@
 <section>
     <h1> Autómata Celular 1D </h1>
 
+    <p>Los autómatas celulares son modelos matemáticos para sistemas conformados por celdas que pueden tomar distintos valores.
+    Los estados evolucionan a través de pasos de tiempo discretos a partir de reglas de transición que dependen de la vecindad
+    que rodea a la célula. </p>
+
+    <p>
+        Se utlizará el sistema de clasificación de Wolfram. En el cual el estado de cada celda tiene 8 posibilidades que dependen de su 
+        estado actual más el de sus dos vecinos. Existen 256 reglas diferentes.
+        Según Wolfram, se pueden clasificar el comportamiento de los autómatas celulares a través de cuatro clases:
+        <ul> 
+            <li> <strong>Clase 1:</strong> El sistema evoluciona hacia un estado homogéneo. </li>
+            <li> <strong>Clase 2:</strong> El sistema evoluciona hacia estados establos o periódicos. </li>
+            <li> <strong>Clase 3:</strong> El sistema evoluciona hacia estados con patrones caóticos. </li>
+            <li> <strong>Clase 4:</strong> El sistema evoluciona hacia un estado complejo, es decir, que se encuentran patrónes
+             que son una mezcla de orden y caos.</li>
+        </ul>
+    </p>
+
+
+   <p> Se implementó un autómata célular en una dimensión usando la clasificación de Wolfram.
+       En este caso se escogieron los siguientes parámetros: </p>
+    <ul>
+        <li> Frontera periódica</li>
+        <li> Radio de la vecindad: \( r = 2 \)</li>
+        <li> Condición inicial: célula central viva; las demás muertas </li>
+        <li> Número de renglones: 350 </li>
+        <li> Pasos de tiempo: 350</li>
+    </ul>
+    <p>Se realizaron varias simulaciones pero se ecogieron una de cada clase de la clasificación de Wolfram.</p>
+<h3> Resultados</h3>
         <div style="text-align: center;">
             <figure>
             <img src="img/AC_1D_r255.png" style="width: 50%; height: auto;" alt="AC regla 255" />
