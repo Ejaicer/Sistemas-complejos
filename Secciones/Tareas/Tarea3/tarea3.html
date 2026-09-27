@@ -66,28 +66,41 @@
             <figcaption> Regla 255 de autómata celular en una dimensión; Ejemplo de ac clase 1. </figcaption>
             </figure>
         </div> 
-    
+    <p>
+        
+    </p>
+    <!--- ---------------------------------------------------------------->
         <div style="text-align: center;">
             <figure>
             <img src="img/AC_1D_r1.png" style="width: 50%; height: auto;" alt="AC regla 1" />
             <figcaption> Regla 1 de autómata celular en una dimensión; Ejemplo de ac clase 2. </figcaption>
             </figure>
         </div> 
-
+    <p>
+        
+    </p>
+    <!--- ---------------------------------------------------------------->
         <div style="text-align: center;">
             <figure>
             <img src="img/AC_1D_r150.png" style="width: 50%; height: auto;" alt="AC regla 150" />
             <figcaption> Regla 150 de autómata celular en una dimensión; Ejemplo de ac clase 3. </figcaption>
             </figure>
         </div> 
-
+    <p>
+        
+    </p>
+    <!--- ---------------------------------------------------------------->
         <div style="text-align: center;">
             <figure>
             <img src="img/AC_1D_r30.png" style="width: 50%; height: auto;" alt="AC regla 30" />
             <figcaption> Regla 30 de autómata celular en una dimensión; Ejemplo de ac clase 4. </figcaption>
             </figure>
         </div> 
-
+    <p>
+        
+    </p>
+    <!--- ---------------------------------------------------------------->
+    
 </section>
         
 <hr>
@@ -95,6 +108,14 @@
     <section>
         <h1> Análisis Dinámico</h1>
 
+    <p>
+        Para cada AC se realizó su grafo de transición de estados en un sistema pequeño de 9 renglones. En este grafo dirigido, cada nodo
+        es un estado posible \( n_{e} = 2^{9} = 256 \) y las aristas representan al estado que puede evolucionar el nodo al aplicar
+        la regla dada. <br>
+        Se obtuvieron la cantidad de atractores(ciclos), el periodo del atractor así como el tamaño de la cuenca de atacción de cada uno
+        que se mostrarán en forma de tablas.
+    </p>
+    <!--- ---------------------------------------------------------------->
 
         <div style="text-align: center;">
             <figure>
@@ -102,6 +123,9 @@
             <figcaption> Red de transición de estados; Regla 255 con 9 renglones. </figcaption>
             </figure>
         </div>
+        <!-- ------------------------------------------------------------------------------------>
+        
+        <!-- ------------------------------------------------------------------------------------>
         
         <div style="text-align: center;">
             <figure>
@@ -109,6 +133,245 @@
             <figcaption> Red de transición de estados; Regla 1 con 9 renglones. </figcaption>
             </figure>
         </div> 
+        
+        <!-- ------------------------------------------------------------------------------------>
+        <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th># Atractor</th>
+                    <th>Atractor (Decimal)</th>
+                    <th>Período</th>
+                    <th>Tamaño de la Cuenca de Atracción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="decimal-code">[264, 98]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="decimal-code">[96, 271]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="decimal-code">[112, 263]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="decimal-code">[257, 124]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="decimal-code">[256, 126]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="decimal-code">[120, 259]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="decimal-code">[272, 70]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="decimal-code">[273, 68]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="decimal-code">[280, 66]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="decimal-code">[64, 287]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="decimal-code">[49, 132]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="decimal-code">[48, 391]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="decimal-code">[56, 387]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="decimal-code">[384, 62]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="decimal-code">[128, 63]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="decimal-code">[385, 60]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="decimal-code">[136, 35]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="decimal-code">[392, 34]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="decimal-code">[33, 140]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="decimal-code">[32, 399]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td class="decimal-code">[24, 451]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td class="decimal-code">[449, 28]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td class="decimal-code">[192, 31]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td class="decimal-code">[448, 30]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td class="decimal-code">[17, 196]</td>
+                    <td>2</td>
+                    <td>2 estados <span class="percentage">(0.4%)</span></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td class="decimal-code">[16, 455]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td class="decimal-code">[481, 12]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td class="decimal-code">[480, 14]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td class="decimal-code">[224, 15]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td class="decimal-code">[8, 483]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td class="decimal-code">[496, 6]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td class="decimal-code">[240, 7]</td>
+                    <td>2</td>
+                    <td>6 estados <span class="percentage">(1.2%)</span></td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td class="decimal-code">[497, 4]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td class="decimal-code">[248, 3]</td>
+                    <td>2</td>
+                    <td>8 estados <span class="percentage">(1.6%)</span></td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td class="decimal-code">[504, 2]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td class="decimal-code">[1, 252]</td>
+                    <td>2</td>
+                    <td>14 estados <span class="percentage">(2.7%)</span></td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td class="decimal-code">[0, 511]</td>
+                    <td>2</td>
+                    <td>242 estados <span class="percentage">(47.3%)</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <!-- --------------------------------------------------------------------------------------->
 
         <div style="text-align: center;">
             <figure>
@@ -116,6 +379,10 @@
             <figcaption> Red de transición de estados; Regla 150 con 9 renglones. </figcaption>
             </figure>
         </div>
+                <!-- ------------------------------------------------------------------------------------>
+
+        
+                <!-- ------------------------------------------------------------------------------------>
 
         <div style="text-align: center;">
             <figure>
@@ -123,6 +390,12 @@
             <figcaption> Red de transición de estados; Regla 30 con 9 renglones. </figcaption>
             </figure>
         </div>
+
+                <!-- ------------------------------------------------------------------------------------>
+
+        
+
+                <!-- ------------------------------------------------------------------------------------>
        
     </section>
       
