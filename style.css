@@ -85,10 +85,14 @@ h2 {
             background-color: #f1f5f9;
         }
 
-        .decimal-code {
+ .decimal-code {
             font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
+            font-size: 0.85rem;
             color: #2980b9;
+            word-break: break-word;
+            text-align: justify;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .percentage {
