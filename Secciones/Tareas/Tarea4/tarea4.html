@@ -32,9 +32,27 @@
 <section>
   <h1> Redes </h1>
 <p>
-  
+    Se realizaron las redes de interacciones de los personajes  de la saga de libros de Los Juegos del Hambre de la autora Suzane Collins.
+  Una red es un grafo conformado por nodos, que representan los elementos de algún conjunto, y aristas, las cuales unen a los nodos a través de una relación dentro del sistema.
+En este trabajo se considera una red no direccionada, es decir, las conexiones son simétricas; También se considera el peso de las aristas; y normalmente el tamaño de los nodos depende del grado de estos(número de 
+    conexiones), sin embargo, el tamaño será relacionado a la cantidad de apariciones del elemento en el texto seleccionado.
+    Las métricas seleccionadas fueron las siguientes:
+    <ul>
+        <li> <strong> Grado: </strong> </li>
+        <li> <strong> Grado ponderado: </strong> </li>
+        <li> <strong> Intermediación: </strong> </li>
+        <li> <strong> </strong> Cercanía: </li>
+    </ul>
+    
 </p>
 
+
+<p>
+    A continuación se analizarán las redes de interacción de los personajes. Los grafos fueron generados con Cytoscape y las métricas se obtuvieron con la libreria Networkx de Python.
+    Puesto que tenemos una interacción entre personajes dos a dos; se consideró una red no direccionada. El tamaño del nodo varía dependiendo de la cantidad de
+    menciones en el libro y el peso(grosor) de las aristas depende de las veces que los dos personajes conectados interactuaron (separación entre los nombres con una distancia menor o igual a 15 palabras).
+    
+</p>
 </section>
     
 <!---------------- Los juegos del Hambre ----------------->
@@ -46,15 +64,15 @@
     </p>
 
 
-<h2> Red </h2>
+<h2> Red de interacciones </h2>
         <div style="text-align: center;">
             <figure>
             <img src="img/juegos.png" style="width: 75%; height: auto;" alt="red_juegos" />
-            <figcaption> Red de interacciones de los personajes del libro <em> Los juegos del Hambre</em> de Suzane Collins. </figcaption>
+            <figcaption> Red de interacciones de los personajes del libro <em> Los juegos del Hambre</em>.</figcaption>
             </figure>
         </div> 
 
-  <h2> Tabla </h2>
+  <h2> Métricas de los Personajes </h2>
   <div class="table-container">
 <table>
   <thead>
@@ -293,16 +311,16 @@
 
         
         <!-- ------------------------------------------------------------------------------------>
-        <h2>Red</h2>
+        <h2>Red de interacciones </h2>
         <div style="text-align: center;">
             <figure>
             <img src="img/enllamas.png" style="width: 75%; height: auto;" alt="red_en_llamas" />
-            <figcaption> Red  </figcaption>
+            <figcaption> Red de interacciones de los personajes del libro <em>En llamas</em>.  </figcaption>
             </figure>
         </div> 
         
         <!-- ------------------------------------------------------------------------------------>
-           <h2>Tabla </h2>
+           <h2> Métricas de los personajes </h2>
         <div class="table-container">
         <table>
   <thead>
@@ -746,16 +764,16 @@
       <section>
 <h1>Sinsajo</h1>
 
-      <h2> Red </h2>
+      <h2> Red de interacciones </h2>
         <div style="text-align: center;">
             <figure>
             <img src="img/sinsajo.png" style="width: 75%; height: auto;" alt="red_sinsajo" />
-            <figcaption> Red  </figcaption>
+            <figcaption> Red de interacciones de los personajes del libro <em>Sinsajo</em>.  </figcaption>
             </figure>
         </div>
 
 
-         <h2> Tabla </h2>
+         <h2> Métricas de los personajes </h2>
     <div class="table-container">
       <table>
   <thead>
