@@ -31,7 +31,8 @@
 <section>
     <h1> Modelos basados de Agentes </h1>
 
-    <p>Los modelos basados en agentes (MBA) son colecciones de objetos que interactuan entre ellos y con el entorno sobre el que se 
+    <p>Los modelos basados en agentes (MBA) son colecciones de objetos, conocidos como agentes, que interactuan
+    a través de reglas simples. Esta interacción se da entre ellos y con el entorno sobre el que se 
     encuentran de manera dinámica, es decir, que evoluciona a través del tiempo. Estos modelos sirven para la exploración de
     sistemas complejos y descentralizados donde se puede estudiar la autoorganización y emergencia de patrones. <br>
     Algunos campos que pueden estudiarse a través de los MBA son: </p>
@@ -41,7 +42,7 @@
         <li>Dinámica poblacional(Biología)</li>
         <li>Medicina: propagación de enfermedades</li>
         <li>Dinámica de transporte</li>
-        <li>Economía: Mercados financieros<li>
+        <li>Economía: Mercados financieros</li>
     </ul>
     <!--- ---------------------------------------------------------------->
 
@@ -67,10 +68,24 @@
 
         </p>
 
-        En este caso se considera el modelo en 2D por lo que cada boid tiene asignado un vector posición
+       <p> En este caso se considera el modelo en 2D por lo que cada boid tiene asignado un vector posición
         \( \mathbf{r_{i}} = (x_{i},y_{i}) \) y uno
-        de velocidad \( \mathbf{u}_{i} = (u_{x_{i}},u_{y_{i}})\)
-
+        de velocidad \( \mathbf{u}_{i} = (u_{x_{i}},u_{y_{i}})\) los cuales son ajustados en cada paso.
+       </p>
+<p>
+    Después se toma la distancia \( d\) entre dos agentes y se aplican tres reglas si el boid analizado se encuentra dentro de un
+    radio de percepción \( R_{p}\), es decir, que si se cumple \( 0 &lt; d &lt; R_{p}\) entonces se aplica:
+</p>
+        <ul>
+            <li>1.- Regla de separación: Entre más cerca se encuentren dos agentes, estos generan mayor repulsión con el fin
+            de evitar choques. Para calcularla, si \(N_{i}\) es el conjunto de vecinos, entonces:
+            \[ \mathbf{s}_{i} = \sum_{j \in N_{i}} \left( \mathbf{x}_{i} - \mathbf{x}_{j} \right) \diagup 
+                \| \mathbf{x}_{i} - \mathbf{x}_{j}  \|^{2} \]
+            </li>
+            <li>2.- </li>
+            <li>3.- </li>
+        </ul>
+        
     </section>
       
 <hr>
