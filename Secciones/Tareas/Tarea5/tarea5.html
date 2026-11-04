@@ -73,19 +73,40 @@
         de velocidad \( \mathbf{u}_{i} = (u_{x_{i}},u_{y_{i}})\) los cuales son ajustados en cada paso.
        </p>
 <p>
-    Después se toma la distancia \( d\) entre dos agentes y se aplican tres reglas si el boid analizado se encuentra dentro de un
-    radio de percepción \( R_{p}\), es decir, que si se cumple \( 0 &lt; d &lt; R_{p}\) entonces se aplica:
+    Después se toma la distancia \( d\) entre dos agentes y se aplican tres reglas si el boid \( i \) analizado se encuentra dentro de un
+    radio de percepción \( R_{p}\), es decir, que si se cumple \( 0 &lt; d &lt; R_{p}\) entonces se aplica: <br>
+    Si consideramos \(N_{i}\) el conjunto de vecinos.
 </p>
         <ul>
             <li>1.- Regla de separación: Entre más cerca se encuentren dos agentes, estos generan mayor repulsión con el fin
-            de evitar choques. Para calcularla, si \(N_{i}\) es el conjunto de vecinos, entonces:
-            \[ \mathbf{s}_{i} = \sum_{j \in N_{i}} \left( \mathbf{x}_{i} - \mathbf{x}_{j} \right) \diagup 
-                \| \mathbf{x}_{i} - \mathbf{x}_{j}  \|^{2} \]
+            de evitar choques. Para calcularla:
+            \[ \mathbf{s}_{i} = \sum_{j \in N_{i}} \frac{ \left( \mathbf{x}_{i} - \mathbf{x}_{j} \right) }
+                { \| \mathbf{x}_{i} - \mathbf{x}_{j}  \|^{2} } \]
             </li>
-            <li>2.- </li>
-            <li>3.- </li>
+            <li>2.- Regla de alineación: Cada agente trata de igualar la velocidad de los vecinos y moverse hacia la dirección
+            media de sus vecinos. Para calculara:
+            \[ \mathbf{a}_{i} = \frac{1}{|N_{i}|} \sum_{j \in N_{i}} \mathbf{u}_{j} - \mathbf{u}_{i} \]
+            </li>
+            <li>3.- Regla de cohesión: El boid busca dirigirse al centro de masa de todos los vecinos proximos. Para calcularla:
+            \[ \mathbf{c}_{i} = \frac{1}{|N_{i}|} \sum_{j \in N_{i}} \mathbf{x}_{j} - \mathbf{x}_{i}  \]</li>
         </ul>
-        
+
+        <p>
+            Se considera la combinación de las reglas en la que los pesos \( \omega \) controlan su influencia de la siguiente
+            manera:  
+            \[ \Delta u_{i} = \omega_{s} \mathbf{s}_{i} + \omega_{a} \mathbf{a}_{i} + \omega_{c} \mathbf{c}_{i} \]
+            
+            Donde se toman las siguientes consideraciones:
+        </p>
+
+        <ul>
+            <li>Si no hay un vecino cerca se toma \( \mathbf{s}_{i} = \mathbf{a}_{i} = \mathbf{c}_{i} = \mathbf{0} \)</li>
+            <li>Se considera una fuerza máxima, es decir, se limita la magnitud \( \Delta \mathbf{u}_{i} \)</li>
+            <li>se considera una velocidad máxima, es decir, se limita la velocidad \( \mathbf{u}_{i} \)</li>
+        </ul>
+        <p>
+            A continuación se muestran los resultados de los experimentos realizados.
+        </p>
     </section>
       
 <hr>
@@ -104,6 +125,11 @@
     
     </section>
 
+        <h5> Observaciones finales</h5>
+
+        <p>
+            
+        </p>
 <hr>
         
     <section>
