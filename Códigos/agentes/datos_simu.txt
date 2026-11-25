@@ -1,0 +1,123 @@
+Boids_1:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 12.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 2.0 ######### peso separacion
+w_a = 1.0 ######### peso alineacion
+w_c = 1.1 ######### peso cohesion
+
+Boids_2:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 12.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 4.0 ######### peso separacion
+w_a = 0.2 ######### peso alineacion
+w_c = 0.2 ######### peso cohesion
+
+Boids_3:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 12.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 0.2 ######### peso separacion
+w_a = 4.0 ######### peso alineacion
+w_c = 0.2 ######### peso cohesion
+
+Boids_4: 
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 12.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 0.2 ######### peso separacion
+w_a = 0.2 ######### peso alineacion
+w_c = 4.0 ######### peso cohesion
+
+Boids_5:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 12.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 2.0 ######### peso separacion
+w_a = 2.0 ######### peso alineacion
+w_c = 2.0 ######### peso cohesion  
+
+----------------------------------------
+
+Boids_6:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 6.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 3.3 ######### peso separacion
+w_a = 1.0 ######### peso alineacion
+w_c = 1.1 ######### peso cohesion
+
+boids_7:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 6.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.15      ###### fuerza maxima 
+
+w_s = 1.3 ######### peso separacion
+w_a = 1.9 ######### peso alineacion
+w_c = 1.2 ######### peso cohesion
+
+boids_8:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 6.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.10      ###### fuerza maxima 
+
+w_s = 4.3 ######### peso separacion
+w_a = 0.3 ######### peso alineacion
+w_c = 0.2 ######### peso cohesion
+
+boids_9:
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 6.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.10      ###### fuerza maxima 
+
+w_s = 1.3 ######### peso separacion
+w_a = 0.3 ######### peso alineacion
+w_c = 3.2 ######### peso cohesion
+
+boids_10:*
+
+n = 100.0 #### tamaño de la malla
+nboid = 100 ###### numero de agentes
+r = 6.0   ###### Radio de percepcion
+v_max = 2.5          ###### rapidez maxima
+f_max = 0.10      ###### fuerza maxima 
+
+w_s = 1.8 ######### peso separacion
+w_a = 0.5 ######### peso alineacion
+w_c = 2.2 ######### peso cohesion
+
+*nota:Todas las simulaciones se corrieron por 600 frames, mientras que boids_10 corre por 1000 frames.
