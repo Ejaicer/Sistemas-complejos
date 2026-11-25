@@ -255,6 +255,21 @@
             </figure>
         </div> 
 
+        <p> En el caso de Boids 1 se puede observar que se forman grupos que se unen al chocar, con una tendencia a
+            unificarse. <br>
+            En Boids 2, se sigue respentando la condición inicial solicitada pero con un peso de separación mayor
+            y los otros pesos menores. Se observa como se forma un solo grupo donde los agentes mantienen distancia que podría
+            deberse a la el alto valor del peso de separación. <br>
+            En Boids 3 tienden a formar grupos casi instantáneamente donde se forman distintos grupos que no parecen buscar
+            unirse pero al colisionar se fusionan de manera estable, esto puede deberse al bajo peso de separación y que las 
+            velocidades se igualan por el peso de alineación. <br>
+            En Boids 4 parece que buscan formarse grupos pero no tienen éxito y no lo logran cuando los chocan otros agentes 
+            con mayor velocidad. Este comportamiento puede deberse a que, aunque se tenga un alto nivel de cohesión para intentar
+            juntarse, al tener bajo peso de alineación los agentes de velocidades altas no influyen en los agentes de velocidades
+            bajas y al atravesar los grupos, los rompen. <br>
+            En boids 5 se observa un comportamiento similar al caso principal; solo que cuando un grupo absorbe a agentes externos,
+            estos se unen sin generar tanto rebote.
+        </p>
     <p> A las siguientes simulaciones se les modificó el "área de visión", es decir, se redujo el radio de percepción como se ve
     en la tabla de datos.</p>
 
@@ -286,6 +301,20 @@
             <figcaption> Boids 10 </figcaption>
             </figure>
         </div> 
+        <p>
+            En Boids 6 se utilizaron nuevamenta las condiciones de peso de separación mayor a las otras dos y que las de
+            alineación y coheción sean similares. En este caso se también se observa la tendencia a formar un grupo. <br>
+            En Boids 7 se forman varios grupos relativamente rápido y estos se fusionan al colisionar, algo similar al caso 3.
+            En Boids 8, parece que tiene un comportamiento aleatorio, sin embargo se puede observar que la mayoría de los agentes
+            tienen a emparejar las velocidades a pesar de su bajo peso de alineación. La estructura parece como un gran grupo 
+            unificado pero con interior inestable. Lo último podría deberse al la reducción del radio de percepción junto al
+            alto peso de separación.
+            En boids 9 se ve que se intentan formar pequeños grupos que son muy inestables y se deshacen al chocar con otros 
+            agentes lo que provoca una apariencia aleatoria. 
+            En Boids 10, al principio parece que no hay formación de grupos; sin embargo, conforme avanza el tiempo, se puede
+            observar como comienzan a formarse grupos que se unen al colisionar. 
+            
+        </p>
         
     </section>
 
